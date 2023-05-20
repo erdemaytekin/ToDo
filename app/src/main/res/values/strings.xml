@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Erdem Aytekin 203405020</string>
+    <string name="note_header">Header</string>
+    <string name="note_info">Bilgi</string>
+    <string name="title_activity_new_note">Yeni Görev</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Birinci Bölüm</string>
+    <string name="second_fragment_label">İkinci Bölüm</string>
+    <string name="next">Sonraki</string>
+    <string name="previous">Önceki</string>
+
+    <string name="hello_first_fragment">Merhabalar ilk bölüm</string>
+    <string name="hello_second_fragment">Merhabalar ikinci bölüm. Arg: %1$s</string>
+</resources>
