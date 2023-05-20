@@ -28,7 +28,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="201dp"
         android:layout_marginEnd="261dp"
-        android:text="email"
+        android:text="Kullanıcı Adı"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginStart="95dp"
         android:layout_marginEnd="258dp"
         android:layout_marginBottom="16dp"
-        android:text="password"
+        android:text="Şifre"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -155,13 +155,18 @@ public class dbHelper extends SQLiteOpenHelper {
         return null;
 
     }
-    public boolean deleteTitle(String id)
-    {
-        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-         return sqLiteDatabase.delete(TABLE_NOTES, COLUMN_NOTE_ID + "=" + id, null) > 0;
+    public boolean deleteTitle(String id) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+
+        // Use parameter binding to make the query secure
+        String selection = COLUMN_NOTE_ID + " = ?";
+        String[] selectionArgs = {id};
+
+        int rowsDeleted = sqLiteDatabase.delete(TABLE_NOTES, selection, selectionArgs);
+        sqLiteDatabase.close();
+
+        return rowsDeleted > 0;
     }
-
-
 
 
 
