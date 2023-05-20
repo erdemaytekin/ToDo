@@ -16,7 +16,7 @@ public class NewNote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_note);
         dbHelper DbHelper = new dbHelper(getApplicationContext());
-        EditText noteHead = findViewById(R.id.note_head);
+
         EditText noteBody = findViewById(R.id.note_body);
         submit = findViewById(R.id.submit);
         UserSessionManager userSessionManager = new UserSessionManager(getApplicationContext());
@@ -26,7 +26,7 @@ public class NewNote extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //todo: add data to the tree
-                DbHelper.addNote(noteHead.getText().toString(),noteBody.getText().toString(),userSessionManager.getUserId());
+
                 startActivity(new Intent(NewNote.this, MainPage.class));
                 finish();
 
