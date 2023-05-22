@@ -1,8 +1,8 @@
 package com.example.noteapp;
 
 
-Kurucu metod, Note nesnesini oluştururken notun başlığını ve içeriğini alır ve bu değerleri sınıfın ilgili değişkenlerine atar. 
-    getNoteHead metodu, notun başlığını döndürür. getNoteBody metodu ise notun içeriğini döndürür.
+//Kurucu metod, Note nesnesini oluştururken notun başlığını ve içeriğini alır ve bu değerleri sınıfın ilgili değişkenlerine atar. 
+  //  getNoteHead metodu, notun başlığını döndürür. getNoteBody metodu ise notun içeriğini döndürür.
 
 public class Note {
 
