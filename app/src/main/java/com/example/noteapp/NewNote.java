@@ -1,15 +1,15 @@
 package com.example.noteapp;
 
 
-Bu kod parçacığı, bir NewNote sınıfı tanımlar. 
-    Bu sınıf, AppCompatActivity sınıfından türetilmiştir ve bir Android aktivitesini temsil eder. Sınıfın içinde onCreate metodu bulunur.
-    Bu metod, aktivite oluşturulduğunda çağrılır.
+//Bu kod parçacığı, bir NewNote sınıfı tanımlar. 
+   // Bu sınıf, AppCompatActivity sınıfından türetilmiştir ve bir Android aktivitesini temsil eder. Sınıfın içinde onCreate metodu bulunur.
+    //Bu metod, aktivite oluşturulduğunda çağrılır.
 
-onCreate metodunun içinde, aktivitenin arayüzü R.layout.activity_new_note kaynağından yüklenir.
-    Daha sonra dbHelper ve UserSessionManager nesneleri oluşturulur. noteBody ve submit değişkenleri, arayüzdeki ilgili bileşenlere atanır.
+//onCreate metodunun içinde, aktivitenin arayüzü R.layout.activity_new_note kaynağından yüklenir.
+    //Daha sonra dbHelper ve UserSessionManager nesneleri oluşturulur. noteBody ve submit değişkenleri, arayüzdeki ilgili bileşenlere atanır.
 
-submit düğmesine bir OnClickListener atanır.
-       Daha sonra MainPage aktivitesine geçiş yapılır ve mevcut aktivite sonlandırılır.
+//submit düğmesine bir OnClickListener atanır.
+     //  Daha sonra MainPage aktivitesine geçiş yapılır ve mevcut aktivite sonlandırılır.
 
     
 
