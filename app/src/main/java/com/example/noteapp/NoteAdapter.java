@@ -1,5 +1,18 @@
 package com.example.noteapp;
 
+
+
+//Bu kod, bir Android uygulaması için bir NoteAdapter sınıfı tanımlar. 
+  //  Bu sınıf, bir RecyclerView için bir adaptördür ve notların bir listesini görüntüler. 
+ //   onCreateViewHolder yöntemi, her bir not için bir görünüm oluşturur. 
+  //  onBindViewHolder yöntemi, her bir notun başlığını ve içeriğini görünüme bağlar. 
+//    getItemCount yöntemi, notların sayısını döndürür. Ayrıca, MyViewHolder adlı bir iç sınıf tanımlanmıştır.
+    
+
+
+
+
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
