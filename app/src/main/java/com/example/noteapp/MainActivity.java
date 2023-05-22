@@ -2,13 +2,13 @@ package com.example.noteapp;
 
 
 
-Bu kod, bir Android uygulaması için MainActivity adlı bir sınıf tanımlar. 
-    Bu sınıf, bir AppCompatActivity’dir ve uygulamanın ana ekranını temsil eder. 
-    onCreate yöntemi, kullanıcı arayüzünü oluşturur ve giriş ve kaydolma düğmelerine tıklama işleyicileri ekler.
-    Giriş düğmesine tıklanırsa, kullanıcının e-posta adresi ve şifresi doğrulanır.
-    Eğer doğruysa, kullanıcı oturumu açılır ve ana sayfaya yönlendirilir. Aksi halde, bir hata mesajı görüntülenir. 
-    Kaydolma düğmesine tıklanırsa, kullanıcı kaydolma sayfasına yönlendirilir. 
-    onDestroy yöntemi, kullanıcı çıkış yapmış olur.
+//Bu kod, bir Android uygulaması için MainActivity adlı bir sınıf tanımlar. 
+   // Bu sınıf, bir AppCompatActivity’dir ve uygulamanın ana ekranını temsil eder. 
+  //  onCreate yöntemi, kullanıcı arayüzünü oluşturur ve giriş ve kaydolma düğmelerine tıklama işleyicileri ekler.
+   // Giriş düğmesine tıklanırsa, kullanıcının e-posta adresi ve şifresi doğrulanır.
+ //   Eğer doğruysa, kullanıcı oturumu açılır ve ana sayfaya yönlendirilir. Aksi halde, bir hata mesajı görüntülenir. 
+  //  Kaydolma düğmesine tıklanırsa, kullanıcı kaydolma sayfasına yönlendirilir. 
+  //  onDestroy yöntemi, kullanıcı çıkış yapmış olur.
 
 
 
