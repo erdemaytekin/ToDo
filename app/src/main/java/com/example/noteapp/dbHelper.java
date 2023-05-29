@@ -25,6 +25,56 @@ public class dbHelper extends SQLiteOpenHelper {
     private static final String COLUMN_NOTE_HEAD = "note_head";
     private static final String COLUMN_NOTE_BODY = "note_body";
     private static final String COLUMN_USER_ID_FK = "user_id";
+    
+    
+    
+   // dbHelper, SQLiteOpenHelper sınıfından türetilmiştir ve veritabanı oluşturma, tablo oluşturma, veri ekleme, veri sorgulama, veri güncelleme ve veri silme gibi işlemleri gerçekleştirmek için gerekli metodları içerir.
+
+//Kodun temel özellikleri şunlardır:
+
+//DATABASE_NAME ve DATABASE_VERSION sabitleri: Veritabanının adı ve sürüm numarası belirlenir.
+
+//TABLE_USERS ve TABLE_NOTES sabitleri: Kullanıcılar ve notlar için tablo isimlerini içerir.
+
+//Tablo sütunları için sabitler: Kullanıcılar tablosunda user_id, username ve pass sütunları, notlar tablosunda note_id, note_head, note_body ve user_id (kullanıcıya dış anahtar) sütunları tanımlanmıştır.
+
+//dbHelper constructor'ı: Veritabanı adını ve sürüm numarasını alır.
+
+//onCreate metod: Veritabanı oluşturulduğunda çağrılır. Kullanıcılar ve notlar tablolarını oluşturur.
+
+//onUpgrade metod: Veritabanı sürümü değiştiğinde çağrılır. Mevcut tabloları siler ve onCreate metodunu çağırarak tabloları yeniden oluşturur.
+
+//createUser metod: Kullanıcı ekler. Veritabanına yeni bir kullanıcı kaydeder.
+
+//isUserValid metod: Verilen kullanıcı adı ve parolayı kontrol eder ve kullanıcının geçerli olup olmadığını kontrol eder.
+
+//getNotesByUserId metod: Belirli bir kullanıcıya ait notları getirir. Kullanıcı kimliği kullanılarak notları sorgular ve bir Note listesi döndürür.
+
+//getUserIdFromUsername metod: Kullanıcı adına göre kullanıcı kimliğini alır.
+
+//addNote metod: Not ekler. Verilen not başlığı, içeriği ve kullanıcı kimliğiyle bir not kaydeder.
+
+//getNoteId metod: Verilen başlıkla eşleşen not kimliğini alır.
+
+//deleteTitle metod: Verilen bir not kimliğine göre notu siler.
+
+//Bu kod, kullanıcıları ve notları saklamak için iki ayrı tablo kullanan basit bir veritabanı yapılandırması sunar. dbHelper sınıfı,
+ //   bu veritabanı yapılandırmasını oluşturmak ve veritabanı işlemlerini gerçekleştirmek için kullanılır.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     public dbHelper(@Nullable Context context) {
         super(context, "mydatabase", null, 1);
