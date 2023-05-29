@@ -38,7 +38,7 @@ public class UserSessionManager {
 
 
     public int getUserId() {
-        return sharedPreferences.getInt("USER_ID", -1); // -1: Varsayılan değer, kullanıcı ID'si kaydedilmemişse
+        return sharedPreferences.getInt("USER_ID", -1); // -1 Gelen değer kaydedilmişsse
     }
 
 
