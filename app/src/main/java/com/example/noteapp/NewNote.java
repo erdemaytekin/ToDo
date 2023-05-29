@@ -41,7 +41,7 @@ public class NewNote extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //todo: add data to the tree
+                // ToDo projesinde ağaca veri ekleme yeri
 
                 startActivity(new Intent(NewNote.this, MainPage.class));
                 finish();
