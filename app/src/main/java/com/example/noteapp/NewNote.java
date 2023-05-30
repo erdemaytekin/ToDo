@@ -11,7 +11,9 @@ package com.example.noteapp;
 //submit düğmesine bir OnClickListener atanır.
      //  Daha sonra MainPage aktivitesine geçiş yapılır ve mevcut aktivite sonlandırılır.
 
-    
+
+
+
 
 
 
@@ -32,23 +34,22 @@ public class NewNote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_note);
         dbHelper DbHelper = new dbHelper(getApplicationContext());
-
         EditText noteBody = findViewById(R.id.note_body);
         submit = findViewById(R.id.submit);
         UserSessionManager userSessionManager = new UserSessionManager(getApplicationContext());
 
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // ToDo projesinde ağaca veri ekleme yeri
+                String noteHead = ""; // Not başlığını burada elde edin
+                String noteBodyText = noteBody.getText().toString(); // Not içeriğini alın
+                int userId = userSessionManager.getUserId(); // Kullanıcı kimliğini alın
+
+                DbHelper.addNote(noteHead, noteBodyText, userId);
 
                 startActivity(new Intent(NewNote.this, MainPage.class));
                 finish();
-
-
             }
         });
-
     }
 }
